@@ -1,0 +1,232 @@
+<!DOCTYPE html>         <!--文档类型声明-->
+<html lang="zh-CN">        <!--language = 'en'是英文网页,  'zh-CN'是中文网页-->
+<head>
+    <meta charset="UTF-8">       <!--字符集, 'UTF-8'是万国码-->
+    <title>柳永</title>
+</head>
+<body>
+    <h1 id = "诗">《鹤冲天·黄金榜上》</h1>         <!--标题标签h(h1~h6)-->
+    <p>黄金榜上，偶失龙头望。明代暂遗贤，如何向。<br />未遂风云便，争不恣狂荡。何须论得丧？才子词人，自是白衣卿相。 </p>    <!--段落标签p,可以把 HTML 文档分割为若干段落-->
+    <p>烟花巷陌，依约丹青屏障。幸有意中人，堪寻访。<br />且恁偎红倚翠，风流事，平生畅。青春都一饷。忍把浮名，换了浅斟低唱！</p>    <!--换行标签br-->
+
+    <!--加粗	<strong></strong>或<b></b>	更推荐<strong>，语义更强烈
+        斜体	<em></em>或<i></i>	更推荐使用<em>，语义更强烈
+        删除线	<del></del>或<s><s/>	更推荐使用<del>，语义更强烈
+        下划线	<ins></ins>或<u></u>	更推荐使用<ins>，语义更强烈-->
+    我是<strong>加粗</strong>哈哈哈<br />
+    我是<b>加粗</b>哈哈哈<br />
+    我是<em>斜体</em>哈哈哈<br />
+    我是<i>斜体</i>哈哈哈<br />
+    我是<del>删除线</del>哈哈哈<br />
+    我是<s>删除线</s>哈哈哈<br />
+    我是<ins>下划线</ins>哈哈哈<br />
+    我是<u>下划线</u>哈哈哈<br /><br />
+
+    <!--    <div> 和 <span> 是没有语义的，它们是一个盒子，用来装内容的。
+            div 是 division 的缩写，表示分割、分区。
+            span 意思是跨度、跨距。
+
+        特点：
+             div 标签用来布局，但是现在一行只能放一个 div ，大盒子。
+             span 标签用来布局，一行可以多个 span，小盒子。-->
+    <div>我是div我独占一行</div>真的吗？
+    <span>我是span我不独占一行</span>真的吗？
+    <span>真的</span>哈哈哈<br />
+
+    <!--    <img src="图像url" />
+        src 是标签的 必须属性，用于指定图像文件的路径和文件名。
+
+         属性	属性值	说明
+         src	图片路径	必须属性
+         alt	文本	替换文本，当图片不显示时显示文字
+         title	文本	提示文本。鼠标放到图像上显示文字
+         width	像素	图像宽度
+         height	像素	图像高度
+         border	像素	图像边框粗细
+    -->
+    <img src = '1.jpg' alt = '加载失败' /><br />
+    <img src = 'https://ts3.cn.mm.bing.net/th?id=OIP-C.owpbNjuu23xkyc4yrX9BDQHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2' alt = '加载失败' /><br />
+    <img src = '11.jpg' alt = '加载失败' /><br />
+    <img src = '1.jpg' alt = '加载失败' title = '漂亮不' /><br />
+    <img src = '1.jpg' alt = '加载失败' width="948" height="590" border="1" /><br />
+
+    <!--    <a href="跳转目标" target="目标窗口的弹出方式">文本或图像</a>
+
+       属性	    作用
+       href	    指定链接地址 url，为必须属性。
+       target	指定页面打开方式，_self为默认值，_blank为在新窗口中打开
+
+    -->
+    <a href="https://tse1-mm.cn.bing.net/th/id/OIP-C.nfC2tVNM9TgwQ5QuqECd6wHaFj?w=248&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7" target="_self">风景</a><br />    <!--外部链接-->
+    <a href="https://tse1-mm.cn.bing.net/th/id/OIP-C.nfC2tVNM9TgwQ5QuqECd6wHaFj?w=248&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7" target="_blank">风景</a><br />
+
+    <a href="LiuYong.html" target="_self">柳永</a><br />    <!--内部链接-->
+
+    <a href="#" target="_self">空空如也</a><br />    <!--空链接-->
+
+    <a href="1.zip" target="_self">Download</a><br />    <!--下载链接：地址链接的是文件.exe、压缩包.zip 等。-->
+
+    <a href="1.zip" target="_self"><img src = '1.jpg' alt = '加载失败' /></a><br />    <!--网页元素链接：在网页中的各种网页元素。如文本、图像、表格、音频、视频等。-->
+
+    <!--
+    锚点链接：点击链接，可以快速定位到页面中的某个位置。
+          1、在链接文本的href属性中，设置属性为 #名字的形式 ，如：<a href="#诗">来首诗</a>
+          2、找到目标位置标签，里面添加一个属性 id  = “名字” ，如：<h1 id = "诗">《鹤冲天·黄金榜上》</h1>
+    -->
+    <a href="#诗">来首诗</a>
+
+    <!--字符	    显示
+        &nbsp;	空格
+        &lt;	＜
+        &gt;	＞
+        &copy;	©
+    -->
+    <h6>哈哈哈&nbsp&copy</h6>
+
+    <!--    <table></table> 用于定义表格的标签。
+            <tr></tr> 标签用于定义表格中的行，必须嵌套在 <table></table>中。
+            <td></td> 用于定义表格中的单元格，必须嵌套在 <tr></tr> 中。
+            字母 td 指表格数据（table data），即单元格的内容。
+    -->
+    <table>
+        <!--<th> 标签表示 HTML 表格的表头部分（table head 的缩写） 表头单元格(<th>)也是单元格，常用于表格第一行，突出重要性，表头单元格里面的文字会加粗居中显示。-->
+        <tr><th>姓名</th>  <th>性别</th>  <th>年龄</th></tr>
+        <tr><td>sirius</td>  <td>man</td>  <td>41</td></tr>
+    </table>
+
+    <!--
+    属性名	      属性值	               描述
+    align	left、center、right	  表格元素对齐方式
+    border	       1 或""	   规定是否有边框，默认为""，表示没有边框
+    cellpadding	   像素值	  规定单元边沿与其内容之间空白，默认 1px
+    cellspacing    像素值	  规定单元格之间的空白，默认为 2px
+    width	       像素值或百分比  	  规定表格宽度
+    hight        	像素         	  表格高度
+    -->
+    <table align="center" border="1" cellpadding="20" cellspacing="0" width="500" hight = "200">
+        <!--<th> 标签表示 HTML 表格的表头部分（table head 的缩写） 表头单元格(<th>)也是单元格，常用于表格第一行，突出重要性，表头单元格里面的文字会加粗居中显示。-->
+        <tr><th>姓名</th>  <th>性别</th>  <th>年龄</th></tr>
+        <tr><td>sirius</td>  <td>man</td>  <td>41</td></tr>
+    </table><br/>
+
+    <!--
+    <thead></thead>：定义表格头部，且内部必须有<tr>标签。
+    <tbody></tbody>：定义表格主体，存放数据。
+    -->
+    <table align="center" border="1" cellpadding="20" cellspacing="0" width="500" hight = "200">
+        <!--<th> 标签表示 HTML 表格的表头部分（table head 的缩写） 表头单元格(<th>)也是单元格，常用于表格第一行，突出重要性，表头单元格里面的文字会加粗居中显示。-->
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>sirius</td>
+            <td>man</td>
+            <td>41</td>
+        </tr>
+        <tr>
+            <td>harry</td>
+            <td>man</td>
+            <td>18</td>
+        </tr>
+        </tbody>
+    </table><br/>
+
+    <!--
+    合并单元格方式：
+         跨行合并：rowspan="合并单元格个数"
+         跨列合并：colspan="合并单元格个数"
+
+    合并三部曲：
+         确定跨行 or 跨列。
+         找到目标单元格：跨行取最上面为目标单元格，跨列取最左边为目标单元格。<td colspan="2"></td>
+         删除多余单元格。
+    -->
+    <table align="center" border="1" cellpadding="20" cellspacing="0" width="500" hight = "200">
+        <thead>
+        <tr>
+            <th colspan="3">Magic World</th>
+        </tr>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>sirius</td>
+            <td>man</td>
+            <td>41</td>
+        </tr>
+        <tr>
+            <td>harry</td>
+            <td>man</td>
+            <td>18</td>
+        </tr>
+        </tbody>
+    </table><br/>
+
+    <!--无序列表（重要）
+        <ul> 标签标识 HTML 页面项目中的无序列表，一般以项目符号呈现列表项。
+       语法格式:
+       <ul>
+           <li>列表项1</li>
+           <li>列表项2</li>
+           <li>列表项3</li>
+       </ul>
+       注意:
+           各个列表项之间无需，并列关系。
+           <ul></ul>中只能包含<li></li>，写入其他标签或文字是不允许的。但是<li></li>中可以放其他标签
+           无序列表带有自己的属性，可用 CSS 修改样式属性
+    -->
+    <h1>水果</h1>
+    <ul>
+        <li>榴莲</li>
+        <li>橘子</li>
+        <li>西瓜</li>
+        <li>
+            <p>香蕉</p>
+        </li>
+    </ul>
+
+    <!--有序列表（理解）
+        使用 <ol> 标签来定义有序列表，<li> 来定义列表项。
+         <ol>
+             <li>列表项1</li>
+             <li>列表项2</li>
+             <li>列表项3</li>
+         </ol>
+         与无需列表类似，有自己的样式属性，通过 CSS 设置
+    -->
+    <h1>排名</h1>
+    <ol>
+        <li>柳三变</li>
+        <li>李太白</li>
+        <li>李清照</li>
+    </ol>
+
+    <!--自定义列表（重点）
+        <dl> 定义描述列表，与 <dt> 和 <dd> 标签配合使用。
+       基本语法：
+         <dl>
+             <dt>名词1</dt>
+             <dd>名词1解释1</dd>
+             <dd>名词1解释2</dd>
+         </dl>
+       注意
+         dl 里面只能包含 dt 和 dd。
+    -->
+    <dl>
+        <dt>巫师</dt>
+        <dd>sirius</dd>
+        <dd>harry</dd>
+    </dl>
+</body>
+</html>
